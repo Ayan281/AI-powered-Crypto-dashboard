@@ -38,7 +38,7 @@ const HomePage = ({ isVerified, setShowCaptcha, setPendingRoute }) => {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white relative font-sans selection:bg-red-500">
+    <div className="min-h-screen overflow-x-hidden bg-black text-white relative font-sans selection:bg-red-500">
       <NavBar
         isVerified={isVerified}
         setShowCaptcha={setShowCaptcha}

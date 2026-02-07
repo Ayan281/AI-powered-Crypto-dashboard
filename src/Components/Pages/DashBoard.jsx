@@ -8,6 +8,7 @@ const DashBoard = ({
   isVerified,
   setShowCaptcha,
   setPendingRoute,
+
 }) => {
   const navigate = useNavigate();
   const focus = useRef(null);
@@ -52,7 +53,8 @@ const DashBoard = ({
   }, []);
   if (!data || data.length === 0)
     return (
-      <div className="min-h-screen bg-[#050505] flex flex-col items-center justify-center relative z-50">
+        
+      <div className="min-h-screen overflow-x-hidden    bg-[#050505] flex flex-col items-center justify-center relative z-50">
         
         <div className="absolute inset-0 bg-gradient-to-b from-black via-black to-red-950/10 pointer-events-none" />
 
@@ -94,7 +96,7 @@ const DashBoard = ({
       />
 
       
-      <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-red-600/10 blur-[150px] pointer-events-none" />
+      <div className="absolute top-0 -translate-x-1/2 left-1/4 w-[500px] h-[500px] bg-red-600/10 blur-[150px] pointer-events-none" />
       <div className="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-red-950/20 blur-[150px] pointer-events-none" />
 
       <main className="relative z-10 flex flex-col items-center pt-32 px-6 w-full max-w-[1400px] mx-auto">
